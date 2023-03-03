@@ -26,7 +26,8 @@ imagesContainer.addEventListener('click', (event) => {
   const showImg = basicLightbox.create(
     `
   <img src="${selectImg}" width="800" height="600">
-`
+`,
+    {}
   );
   showImg.show();
 

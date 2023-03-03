@@ -14,15 +14,6 @@ const imgElemtens = galleryItems.reduce((acum, item) => {
 
 imagesContainer.insertAdjacentHTML('beforeend', imgElemtens);
 
-imagesContainer.addEventListener('click', (event) => {
-  event.preventDefault();
-  if (event.target.nodeName !== 'IMG') return;
-  document.addEventListener('keydown', (e) => {
-    if (e.code === 'Escape') {
-    }
-  });
-});
-
 new SimpleLightbox('.gallery a', {
   captionType: 'attr',
   captionsData: 'alt',
